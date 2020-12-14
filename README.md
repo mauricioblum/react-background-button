@@ -8,6 +8,10 @@
 
 ```bash
 npm install --save react-background-button
+
+or
+
+yarn install react-background-button
 ```
 
 ## Usage
@@ -15,12 +19,12 @@ npm install --save react-background-button
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-background-button'
-import 'react-background-button/dist/index.css'
+import BackgroundButton from 'react-background-button'
+import img from '../assets/img.jpg'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <BackgroundButton image={img}>Button</BackgroundButton>
   }
 }
 ```
